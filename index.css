@@ -1,98 +1,121 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 @font-face {
-    font-family: 'ClashDisplay-Medium';
-    src: url('fonts/ClashDisplay-Medium.woff2') format('woff2'),
-         url('fonts/ClashDisplay-Medium.woff') format('woff'),
-         url('fonts/ClashDisplay-Medium.ttf') format('truetype');
-         font-weight: 500;
-         font-display: swap;
-         font-style: normal;
-  }
-  @font-face {
-    font-family: 'ClashDisplay-Semibold';
-    src: url('../fonts/ClashDisplay-Semibold.woff2') format('woff2'),
-         url('../fonts/ClashDisplay-Semibold.woff') format('woff'),
-         url('../fonts/ClashDisplay-Semibold.ttf') format('truetype');
-         font-weight: 600;
-         font-display: swap;
-         font-style: normal;
-  }
+  font-family: 'GeneralSans-Variable';
+  src: url('fonts/Fonts/Variable/GeneralSans-Variable.ttf') format('truetype');
+       font-weight: 200 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans-VariableItalic';
+  src: url('fonts/Fonts/Variable/GeneralSans-VariableItalic.ttf') format('truetype');
+       font-weight: 200 700;
+       font-display: swap;
+       font-style: italic;
+}
+
+.image{
+  display: flex;
+  vertical-align: center;
+  max-width: 100%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.heading1{
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 64px;
+  line-height: 125.55%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.rock3d{
+  font-family: 'Rock 3D';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 97px;
+}
+
+.gochi{
+  font-family: 'Gochi Hand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 79px;
+}
+
+.header{
+font-family: roc-grotesk, sans-serif;
+font-weight: 400;
+font-style: normal;
+text-align: right;
+}
+
+.container{
+  text-align: left;
+  margin-top: 7%;
+  margin-bottom: 7%;
+
+}
+
+.vector{
+  position:absolute;
+  z-index: index 1;
+  top: 10%;
+  left: 2.73%;
+  right: 4.92%;
+  bottom: 200%;
+  width: 1182px;
+  height: 499px;
   
-  
-  h1{
-    font-family: ClashDisplay-Semibold;
-    font-style: normal;
-    font-size: 80px;
-    position: absolute;
-    bottom: 60px;
-    left:100px;
-    margin: 0px;
-    line-height: 85px;
-  }
-  
-  .heading{
-    margin: -7px;
-    position: relative;
-    height: 470px;
-    background-color:#EAE8E3 ;
-    margin-bottom: 120px;
-  }
-  
-  
-  
-  .heading p{
-    font-family: Arial,sans-serif;
-    font-style: normal;
-    font-size: 14px;
-    position: absolute;
-    bottom: 60px;
-    right: 80px;
-    margin: 0px;
-   
-  }
-  
-  #yellow{
-    color: yellow;
-  }
-  
-  .red{
-    color: red;
-  }
-  
-  #head{
-    font-family: ClashDisplay-Medium;
-    font-size: 20px;
-  }
-  
-  
-  body {
-    background-color: #FFF7F5;
-  }
-  
-  .text{
-    
-    background-color: #FFF7F5;
-    margin: 0px 95px;
-  }
-  
-  p {
-    max-width: 750px;
-    font-family: Arial,sans-serif;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 25px;
-    color: black;
-    
-  }
-  p1 {
-    max-width: 900px;
-    font-family: ClashDisplay-Medium;
-    font-style: normal;
-    font-size: 35px;
-    line-height: 1.44em;
-    color: black;
-    margin: 120px 0px;
-    display: block;
-   }
-  
+}
+.title{
+position: relative;
+z-index: index 0;
+font-family: roc-grotesk, sans-serif;
+font-weight: 600;
+font-style: normal;
+font-size: 106px;
+line-height: 149px;
+margin-left: 5%;
+margin-right: 5%;
+}
+
+.author{
+font-family: 'GeneralSans-Variable';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+}
+
+.heading2{
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 141.8%;
+  text-transform: uppercase;
+  color:  #FF7870;
+}
+
+.heading3{
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 125.55%;
+}
+
+.body{
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 141.8%;
+}
