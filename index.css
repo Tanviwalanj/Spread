@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
+:root {
+  --body: 16px;
+  --heading1: calc(var(--body)*2.5);
+  --heading2: calc(var(--body)*2);
+  --heading3: calc(var(--body)*3);
+  --title: calc(var(--body)*4);
+}
+
+@media (min-width: 768px) {
+  :root {
+  --body: 24px;
+
+  --heading1: calc(var(--body)*4);
+  --heading2: calc(var(--body)*3);
+  --heading3: calc(var(--body)*4);
+  --title: calc(var(--body)*5);
+
+}
+  }
+
+
+
 @font-face {
   font-family: 'GeneralSans-Variable';
   src: url('fonts/Fonts/Variable/GeneralSans-Variable.ttf') format('truetype');
@@ -29,8 +51,7 @@
   font-family: 'General Sans';
   font-style: normal;
   font-weight: 200;
-  font-size: 64px;
-  line-height: 125.55%;
+  font-size: calc(var(--body)*2.5);
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 3%;
@@ -41,16 +62,14 @@
   font-family: 'Rock 3D';
   font-style: normal;
   font-weight: 400;
-  font-size: 64px;
-  line-height: 97px;
+  font-size: calc(var(--body)*2.5);
 }
 
 .gochi{
   font-family: 'Gochi Hand';
   font-style: normal;
   font-weight: 400;
-  font-size: 64px;
-  line-height: 79px;
+  font-size: calc(var(--body)*2.5);
 }
 
 .header{
@@ -74,10 +93,9 @@ z-index: index 0;
 font-family: roc-grotesk, sans-serif;
 font-weight: 600;
 font-style: normal;
-font-size: 106px;
-line-height: 149px;
+font-size: calc(var(--body)*5);
+line-height: 110%;
 margin-left: 5%;
-margin-right: 5%;
 }
 
 .author{
