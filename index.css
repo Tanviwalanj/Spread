@@ -39,6 +39,27 @@
        font-style: italic;
 }
 
+.vector{
+  position:absolute;
+  z-index: index 1;
+  top: 10%;
+  left: 2.73%;
+  right: 4.92%;
+  bottom: 200%;
+  width: 1182px;
+  height: 450px;
+  text-align: left;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+.container{
+  text-align: left;
+  margin-top: 7%;
+  margin-bottom: 7%;
+
+}
+
 .image{
   display: flex;
   vertical-align: center;
@@ -79,14 +100,6 @@ font-weight: 400;
 font-style: normal;
 text-align: right;
 }
-
-.container{
-  text-align: left;
-  margin-top: 7%;
-  margin-bottom: 7%;
-
-}
-
 
 .title{
 position: relative;
