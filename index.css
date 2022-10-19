@@ -154,3 +154,10 @@ font-size: calc(var(--body))
   font-style: normal;
   font-weight: 500;
   font-size: calc(var(--body)*2.5);}
+
+.response{
+  background-color: #FFEDEE; 
+  border-radius: 4px;  
+  padding: 7%; 
+  text-align: justify;
+}
