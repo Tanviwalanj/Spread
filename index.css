@@ -91,7 +91,7 @@ z-index: index 0;
 font-family: roc-grotesk, sans-serif;
 font-weight: 600;
 font-style: normal;
-font-size: calc(var(--body)*5);
+font-size: calc(var(--body)*4.5);
 line-height: 110%;
 margin-left: 5%;
 margin-bottom: 8%;
