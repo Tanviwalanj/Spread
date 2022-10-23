@@ -89,6 +89,13 @@
   font-size: calc(var(--body)*2.5);
 }
 
+.melodrama{
+  font-family: 'Melodrama', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(var(--body)*2.5);
+}
+
 .header{
 font-family: roc-grotesk, sans-serif;
 font-weight: 400;
@@ -114,7 +121,7 @@ font-style: normal;
 font-weight: 400;
 margin-left: 5%;
 margin-right: 5%;
-font-size: calc(var(--body))
+font-size: calc(var(--body));
 }
 
 .heading2{
@@ -155,9 +162,33 @@ font-size: calc(var(--body))
   font-weight: 500;
   font-size: calc(var(--body)*2.5);}
 
+.italics{font-family: 'General Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-size: calc(var(--body)*2.5);}
+
+.semibold{font-family: 'General Sans';
+  font-style:normal;
+  font-weight: 600;
+  font-size: calc(var(--body)*2.5);}
+
+.emphasiswhite{font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 500;
+  color: white;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+  font-size: calc(var(--body)*2.5);}
+
+.emphasislight{font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(var(--body)*2.5);}
+
 .response{
   background-color: #FFEDEE; 
   border-radius: 4px;  
   padding: 7%; 
   text-align: justify;
 }
+
