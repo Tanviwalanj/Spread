@@ -149,6 +149,15 @@ font-size: calc(var(--body));
   font-weight: 400;
   font-size: calc(var(--body)*2.5);}
 
+.italicsorange{font-family: 'General Sans';
+  font-style: italic;
+  font-weight: 300;
+  color:  #FF7870;
+  font-size: calc(var(--body));
+  line-height: 141.8%;
+  margin-left: 5%;
+  margin-right: 5%;}
+
 .semibold{font-family: 'General Sans';
   font-style:normal;
   font-weight: 600;
