@@ -6,12 +6,15 @@
   --heading2: calc(var(--body)*1.2);
   --heading3: calc(var(--body)*2.5);
   --title: calc(var(--body)*3.3);
+  --margin-right: 16px;
+  --margin-left: 16px;
+  --margin-top: 32px;
+  --margin-bottom: 32px;
 }
 
 @media (min-width: 768px) {
   :root {
   --body: 20px;
-
   --heading1: calc(var(--body)*4);
   --heading2: calc(var(--body)*3);
   --heading3: calc(var(--body)*4);
