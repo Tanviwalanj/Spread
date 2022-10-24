@@ -50,9 +50,10 @@ body{
   font-family: 'General Sans';
   font-style: normal;
   font-weight: 400;
-  margin-left: 5%;
-  margin-right: 5%;
   font-size: calc(var(--body));
+  max-width: 1090px;
+  margin: auto;
+  width: 88%;
   }
 
   .title{
