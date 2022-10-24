@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 :root {
-  --body: 16px;
+  --body: 19px;
   --heading1: calc(var(--body)*2.5);
   --heading2: calc(var(--body)*1.2);
   --heading3: calc(var(--body)*2.5);
-  --title: calc(var(--body)*3);
+  --title: calc(var(--body)*2);
  
 }
 
@@ -62,8 +62,8 @@ body{
     font-family: roc-grotesk, sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: calc(var(--body)*4.5);
-    line-height: 110%;
+    font-size: calc(var(--body)*5);
+    line-height: 0.9;
     margin-left: 5%;
     margin-bottom: 8%;
     max-width: 1090px;
@@ -85,6 +85,7 @@ body{
   font-family: 'General Sans';
   font-style: normal;
   font-weight: 200;
+  line-height: 1.2;
   font-size: calc(var(--body)*2.5);
   max-width: 1090px;
   margin: auto;
@@ -124,7 +125,7 @@ text-align: right;
   font-style: normal;
   font-weight: 400;
   font-size:calc(var(--body)*1.5);
-  line-height: 141.8%;
+  line-height: 40px;
   text-transform: uppercase;
   color:  #FF7870;
   max-width: 768px;
@@ -147,7 +148,7 @@ text-align: right;
   font-style: normal;
   font-weight: 300;
   font-size: calc(var(--body));
-  line-height: 141.8%;
+  line-height: 28px;
   max-width: 1090px;
   margin: auto;
   width: 88%;
