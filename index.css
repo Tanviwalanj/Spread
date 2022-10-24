@@ -277,7 +277,7 @@ text-align: right;
     position: relative;
     display: inline-block;
   }
-  .tooltip:none .tooltiptext {
+  .tooltip:hover:none .tooltiptext {
     visibility: visible;
   }
   .tooltip .tooltiptext {
