@@ -272,7 +272,7 @@ text-align: right;
     background-color: #3A3A3A;
   }
 }
-@media (pointer: coarse) {
+@media (pointer: none) {
   .tooltip {
     position: relative;
     display: inline-block;
