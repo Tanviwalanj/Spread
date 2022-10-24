@@ -65,6 +65,9 @@ body{
     line-height: 110%;
     margin-left: 5%;
     margin-bottom: 8%;
+    max-width: 1090px;
+    margin: auto;
+    width: 88%;
     }
 
 .image{
@@ -72,6 +75,9 @@ body{
   vertical-align: center;
   max-width: 100%;
   height: auto;
+  max-width: 1090px;
+  margin: auto;
+  width: 88%;
 }
 
 .heading1{
@@ -79,8 +85,9 @@ body{
   font-style: normal;
   font-weight: 200;
   font-size: calc(var(--body)*2.5);
-  margin-left: 5%;
-  margin-right: 5%;
+  max-width: 1090px;
+  margin: auto;
+  width: 88%;
 }
 .rock3d{
   font-family: 'Rock 3D';
@@ -140,8 +147,9 @@ text-align: right;
   font-weight: 300;
   font-size: calc(var(--body));
   line-height: 141.8%;
-  margin-left: 5%;
-  margin-right: 5%;
+  max-width: 1090px;
+  margin: auto;
+  width: 88%;
 }
 
 .emphasis{font-family: 'General Sans';
@@ -160,8 +168,10 @@ text-align: right;
   color:  #FF7870;
   font-size: calc(var(--body));
   line-height: 141.8%;
-  margin-left: 5%;
-  margin-right: 5%;}
+  max-width: 1090px;
+  margin: auto;
+  width: 88%;
+}
 
 .semibold{font-family: 'General Sans';
   font-style:normal;
@@ -189,7 +199,12 @@ text-align: right;
 }
 
 .line{
-  margin: 0;
+  max-width: 1090px;
+  margin: auto;
+  width: 88%;
+  background-color:#C7C7C7; 
+  height: 1px; 
+  border: 0 none;
 }
 
 
