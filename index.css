@@ -5,7 +5,7 @@
   --heading1: calc(var(--body)*2.5);
   --heading2: calc(var(--body)*1.2);
   --heading3: calc(var(--body)*2.5);
-  --title: calc(var(--body)*3.3);
+  --title: calc(var(--body)*3);
  
 }
 
