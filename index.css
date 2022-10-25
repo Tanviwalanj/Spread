@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 :root {
-  --body: 19px;
-  --heading1: calc(var(--body)*2.5);
+  --body: 16px;
+  --heading1: calc(var(--body)*2);
   --heading2: calc(var(--body)*1.2);
-  --heading3: calc(var(--body)*2.5);
-  --title: calc(var(--body)*2);
+  --heading3: calc(var(--body)*2);
+  --title: calc(var(--body)*3);
  
 }
 
 @media (min-width: 768px) {
   :root {
   --body: 20px;
-  --heading1: calc(var(--body)*4);
-  --heading2: calc(var(--body)*3);
-  --heading3: calc(var(--body)*4);
+  --heading1: calc(var(--body)*2.5);
+  --heading2: calc(var(--body)*1.6);
+  --heading3: calc(var(--body)*3);
   --title: calc(var(--body)*5);
-  --author: calc(var(--body)*1.2);
+  --author: calc(var(--body)*1);
 
 }
   }
@@ -50,13 +50,13 @@ body{
   font-family: 'General Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: calc(var(--body));
+  font-size: var(--author);
   max-width: 1090px;
   margin: auto;
   width: 88%;
   }
 
-div.title {
+.title {
   position: relative;
   z-index: index 0;
   font-family: roc-grotesk, sans-serif;
@@ -68,18 +68,7 @@ div.title {
   max-width: 1090px;
   margin: auto;
   width: 88%;
-  }
-    
-  @media screen and (min-width: 601px) {
-    div.title {
-    font-size: 80px;
-    }
-    }
-    
-  @media screen and (max-width: 600px) {
-    div.title {
-    font-size: 62px;
-    }
+  font-size: var(--title);
   }
 
 .image{
@@ -92,7 +81,7 @@ div.title {
   width: 88%;
 }
 
-div.heading1{
+.heading1{
   font-family: 'General Sans';
   font-style: normal;
   font-weight: 200;
@@ -100,40 +89,28 @@ div.heading1{
   max-width: 1090px;
   margin: auto;
   width: 88%;
+  font-size: var(--heading1);
 }
-
-@media screen and (min-width: 601px) {
-  div.heading1 {
-  font-size: calc(var(--body)*2.5);
-  }
-  }
-  
-@media screen and (max-width: 600px) {
-  div.heading1 {
-  font-size: 38px;
-  }
-}
-
 
 .rock3d{
   font-family: 'Rock 3D';
   font-style: normal;
   font-weight: 400;
-  font-size: calc(var(--body)*2.5);
+  font-size: var(--heading1);
 }
 
 .gochi{
   font-family: 'Gochi Hand';
   font-style: normal;
   font-weight: 400;
-  font-size: calc(var(--body)*2.5);
+  font-size: var(--heading1);
 }
 
 .melodrama{
   font-family: 'Melodrama', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: calc(var(--body)*2.5);
+  font-size: var(--heading1);
 }
 
 .header{
@@ -146,62 +123,37 @@ margin: auto;
 width: 88%;
 }
 
-
-div.heading2{
+.heading2{
   font-family: 'General Sans';
   font-style: normal;
   font-weight: 400;
-  line-height: auto;
+  line-height: 1;
   text-transform: uppercase;
   color:  #FF7870;
   max-width: 768px;
   margin: auto;
   width: 80%;
-}
-
-@media screen and (min-width: 601px) {
-  div.heading2 {
-  font-size:calc(var(--body)*1.5);
-  }
-  }
-  
-@media screen and (max-width: 600px) {
-  div.heading2 {
-  font-size: 23px;
-  }
+  font-size: var(--heading2);
 }
 
 .heading3{
   font-family: 'General Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: calc(var(--body)*2.5);
-  line-height: 125.55%;
+  font-size: var(--heading3);
   margin-left: 5%;
   margin-right: 5%;
 }
 
-div.body{
+body{
   font-family: 'General Sans';
   font-style: normal;
   font-weight: 300;
-  font-size: calc(var(--body));
+  font-size: var(--body);
   line-height: 28px;
   max-width: 1090px;
   margin: auto;
   width: 88%;
-}
-
-@media screen and (min-width: 601px) {
-  div.body {
-  font-size: calc(var(--body));
-  }
-  }
-  
-@media screen and (max-width: 600px) {
-  div.body {
-  font-size: 22px;
-  }
 }
 
 .emphasis{font-family: 'General Sans';
