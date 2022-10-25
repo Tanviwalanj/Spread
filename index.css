@@ -131,17 +131,28 @@ text-align: right;
 }
 
 
-.heading2{
+div.heading2{
   font-family: 'General Sans';
   font-style: normal;
   font-weight: 400;
-  font-size:calc(var(--body)*1.5);
-  line-height: 40px;
+  line-height: auto;
   text-transform: uppercase;
   color:  #FF7870;
   max-width: 768px;
   margin: auto;
   width: 80%;
+}
+
+@media screen and (min-width: 601px) {
+  div.heading2 {
+  font-size:calc(var(--body)*1.5);
+  }
+  }
+  
+@media screen and (max-width: 600px) {
+  div.heading2 {
+  font-size: 23px;
+  }
 }
 
 .heading3{
@@ -154,10 +165,11 @@ text-align: right;
   margin-right: 5%;
 }
 
-.body{
+div.body{
   font-family: 'General Sans';
   font-style: normal;
   font-weight: 300;
+  font-size: calc(var(--body));
   line-height: 28px;
   max-width: 1090px;
   margin: auto;
@@ -172,7 +184,7 @@ text-align: right;
   
 @media screen and (max-width: 600px) {
   div.body {
-  font-size: 25px;
+  font-size: 22px;
   }
 }
 
