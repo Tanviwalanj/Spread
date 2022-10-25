@@ -158,11 +158,22 @@ text-align: right;
   font-family: 'General Sans';
   font-style: normal;
   font-weight: 300;
-  font-size: calc(var(--body)*1.1);
   line-height: 28px;
   max-width: 1090px;
   margin: auto;
   width: 88%;
+}
+
+@media screen and (min-width: 601px) {
+  div.body {
+  font-size: calc(var(--body));
+  }
+  }
+  
+@media screen and (max-width: 600px) {
+  div.body {
+  font-size: 25px;
+  }
 }
 
 .emphasis{font-family: 'General Sans';
