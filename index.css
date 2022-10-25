@@ -158,7 +158,7 @@ text-align: right;
   font-family: 'General Sans';
   font-style: normal;
   font-weight: 300;
-  font-size: calc(var(--body));
+  font-size: calc(var(--body)*1.1);
   line-height: 28px;
   max-width: 1090px;
   margin: auto;
