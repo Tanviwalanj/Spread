@@ -56,20 +56,31 @@ body{
   width: 88%;
   }
 
-  .title{
-    position: relative;
-    z-index: index 0;
-    font-family: roc-grotesk, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: calc(var(--body)*5);
-    line-height: 0.9;
-    margin-left: 5%;
-    margin-bottom: 8%;
-    max-width: 1090px;
-    margin: auto;
-    width: 88%;
+div.title {
+  position: relative;
+  z-index: index 0;
+  font-family: roc-grotesk, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 0.9;
+  margin-left: 5%;
+  margin-bottom: 8%;
+  max-width: 1090px;
+  margin: auto;
+  width: 88%;
+  }
+    
+  @media screen and (min-width: 601px) {
+    div.title {
+    font-size: 80px;
     }
+    }
+    
+    @media screen and (max-width: 600px) {
+    div.title {
+    font-size: 55px;
+    }
+  }
 
 .image{
   display: flex;
