@@ -62,7 +62,7 @@ div.title {
   font-family: roc-grotesk, sans-serif;
   font-weight: 600;
   font-style: normal;
-  line-height: 0.9;
+  line-height: 1;
   margin-left: 5%;
   margin-bottom: 8%;
   max-width: 1090px;
@@ -76,9 +76,9 @@ div.title {
     }
     }
     
-    @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     div.title {
-    font-size: 55px;
+    font-size: 58px;
     }
   }
 
