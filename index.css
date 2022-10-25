@@ -92,16 +92,29 @@ div.title {
   width: 88%;
 }
 
-.heading1{
+div.heading1{
   font-family: 'General Sans';
   font-style: normal;
   font-weight: 200;
   line-height: 1.2;
-  font-size: calc(var(--body)*2.5);
   max-width: 1090px;
   margin: auto;
   width: 88%;
 }
+
+@media screen and (min-width: 601px) {
+  div.heading1 {
+  font-size: calc(var(--body)*2.5);
+  }
+  }
+  
+@media screen and (max-width: 600px) {
+  div.heading1 {
+  font-size: 38px;
+  }
+}
+
+
 .rock3d{
   font-family: 'Rock 3D';
   font-style: normal;
