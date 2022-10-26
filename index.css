@@ -6,7 +6,6 @@
   --body: 16px;
   --heading1: calc(var(--body)*2.375);
   --heading2: calc(var(--body)*1.375);
-  --heading3: calc(var(--body)*2);
   --title: calc(var(--body)*3);
   --author: calc(var(--body)*1);
   --header: calc(var(--body)*1.25);
@@ -16,6 +15,7 @@
   --largespacing: 52px;
   --xlspacing: 80px;
   --sectionbreak: 100px;
+  --headingcolor: #FF7870;
  
 }
 
@@ -24,7 +24,6 @@
   --body: 20px;
   --heading1: calc(var(--body)*3);
   --heading2: calc(var(--body)*1.6);
-  --heading3: calc(var(--body)*3);
   --title: calc(var(--body)*5);
   --author: calc(var(--body)*1);
   --header: calc(var(--body)*1.2);
@@ -34,16 +33,59 @@
   --largespacing: 72px;
   --xlspacing: 100px;
   --sectionbreak: 120px;
+  --headingcolor: #FF7870;
 
 }}
 
-html,body
-{
+@media print{
+  .heading1 {page-break-before: auto;}
+  .heading2 {page-break-before: auto;}
+  .title {page-break-before: auto;}
+  .body {page-break-before: auto;}
+  .author {page-break-before: auto;}
+  .line {page-break-before: auto;}
+  .excerpt {page-break-before: auto;}
+  .heading1 {page-break-after: auto;}
+  .heading2 {page-break-after: auto;}
+  .title {page-break-after: auto;}
+  .body {page-break-after: auto;}
+  .author {page-break-after: auto;}
+  .line {page-break-after: auto;}
+  .excerpt {page-break-after: auto;}
+
+  @page{
+    margin-top: 1cm;
+    margin-bottom: 1cm;  
+    }
+  
+
+  :root {
+    --body: 12pt;
+    --heading1: calc(var(--body)*2);
+    --heading2: calc(var(--body)*1.2);
+    --title: calc(var(--body)*3.4);
+    --author: calc(var(--body));
+    --header: calc(var(--body)*1.2);
+    --excerpt: 12pt;
+    --smallspacing: 0.2cm;
+    --mediumspacing: 0.7cm;
+    --largespacing: 1cm;
+    --xlspacing: 1.2cm;
+    --sectionbreak: 1.6cm;
+    --headingcolor: #FF7870;
+}}
+
+html,head{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+html,body{
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
 }
 
 
@@ -67,36 +109,28 @@ html,body
 /* Scribble */
 
 .container {
-  position: relative;
-  max-width: 1600px;
-  margin: 0 auto;
+  position: sticky;
+  width: auto;
+  height: auto;
+  margin: 0;
   box-sizing: border-box;
 }
 
-.container img {vertical-align: bottom;}
+img {
+  width: 88%;
+  height: 100%;
+  object-fit: fill;
+}
 
 .container .vector {
   position: absolute;
-  z-index: 14;
-  bottom: 0;
-  width: 100%;
+  z-index: 1;
   display: block;
-  object-fit: fill;
+  object-fit: cover;
   left: 50%;
   transform: translateX(-50%);
-  display: inline-table;
-  top:auto;
 }
 
-.author{
-  font-family: 'General Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: var(--author);
-  max-width: 1090px;
-  margin: auto;
-  width: 88%;
-  }
 
 .title {
   position: relative;
@@ -113,7 +147,19 @@ html,body
   margin-bottom: var(--largespacing);
   width: 88%;
   font-size: var(--title);
+  object-fit: cover;
   }
+
+.author{
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--author);
+  max-width: 1090px;
+  margin: auto;
+  width: 88%;
+  }
+
 
 .image{
   display: flex;
@@ -158,6 +204,9 @@ html,body
   font-style: normal;
   font-weight: 400;
   font-size: var(--heading1);
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 8px;
 }
 
 /* "Normal" variations*/
@@ -193,7 +242,7 @@ width: 98%;
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
-  color:  #FF7870;
+  color:  var(--headingcolor);
   max-width: 768px;
   margin-left: auto;
   margin-right: auto;
@@ -269,13 +318,14 @@ width: 98%;
 
 
 .line{
-  background-color:#e1e1e1; 
-  height: 1px; 
-  border: 0 none;
+  background: transparent;
+  height: 1px;
+  border: none;
+  border-top: solid 1px #c0c0c0;
   max-width: 1090px;
   margin-left: auto;
   margin-right: auto;
-  width: 88%;
+  width: 88%
 }
 
 
@@ -286,6 +336,19 @@ width: 98%;
   }
   .tooltip:hover .tooltiptext {
     visibility: visible;
+  }
+  .tooltip:hover .rock3d{
+    color: #FF7870;
+    cursor: help;
+  }
+  .tooltip:hover .gochi{
+    color: #FF7870;
+    cursor: help;
+  }
+
+  .tooltip:hover .melodrama{
+    color: #FF7870;
+    cursor: help;
   }
   .tooltip .tooltiptext {
     font-family: 'General Sans';
@@ -342,10 +405,11 @@ width: 98%;
     background-color: #3A3A3A;
   }
 }
+
 @media (hover:none) {
   .tooltip {
     position: relative;
-    display: inline-block;
+    /*display: inline-block;*/
   }
   .tooltip:hover .tooltiptext {
     visibility: hidden;
