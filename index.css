@@ -64,22 +64,24 @@ html,body
   margin-bottom: var(--sectionbreak);
 }
 
-.textscribble{
-  text-align: left;
-  margin-top: 4%;
-  margin-bottom: 4%;
+/* Scribble */
 
+.container {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-.vector{
-  position:absolute;
+.container img {vertical-align: middle;}
+
+.container .vector {
+  position: absolute;
   z-index: 14;
-  top: 7%;
-  left: 4%;
-  right: 4.92%;
-  bottom: 200%;
-  object-fit: stretch;
-  text-align: left;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  object-fit: fill;
 }
 
 .author{
@@ -152,6 +154,21 @@ html,body
   font-style: normal;
   font-weight: 400;
   font-size: var(--heading1);
+}
+
+/* "Normal" variations*/
+.normal1{
+  font-family: 'Gochi Hand';
+  font-style: normal;
+  font-weight: 300;
+  font-size: var(--body);
+}
+
+.normal2{
+  font-family: 'Rock 3D';
+  font-style: normal;
+  font-weight: 300;
+  font-size: var(--body);
 }
 
 .header{
