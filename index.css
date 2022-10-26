@@ -326,7 +326,7 @@ width: 98%;
     position: relative;
     display: inline-block;
   }
-  .tooltip:touch-action .tooltiptext {
+  .tooltip:not(:hover) .tooltiptext {
     visibility: visible;
   }
   .tooltip .tooltiptext {
