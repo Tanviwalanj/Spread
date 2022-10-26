@@ -5,7 +5,7 @@
 :root {
   --body: 16px;
   --heading1: calc(var(--body)*2.375);
-  --heading2: calc(var(--body)*1.2);
+  --heading2: calc(var(--body)*1.5);
   --heading3: calc(var(--body)*2);
   --title: calc(var(--body)*3);
   --author: calc(var(--body)*1);
