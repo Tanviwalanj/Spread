@@ -4,11 +4,11 @@
 
 :root {
   --body: 18px;
-  --heading1: calc(var(--body)*2.375);
-  --heading2: calc(var(--body)*1.375);
-  --title: calc(var(--body)*3);
-  --author: calc(var(--body)*1);
-  --header: calc(var(--body)*1.25);
+  --heading1: calc(var(--body)*2.11);
+  --heading2: calc(var(--body)*1.22);
+  --title: calc(var(--body)*3.11);
+  --author: calc(var(--body));
+  --header: calc(var(--body));
   --excerpt: 14px;
   --smallspacing: 18px;
   --mediumspacing: 32px;
