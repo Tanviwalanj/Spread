@@ -6,7 +6,7 @@
   --body: 18px;
   --heading1: calc(var(--body)*2.11);
   --heading2: calc(var(--body)*1.22);
-  --title: calc(var(--body)*3.11);
+  --title: calc(var(--body)*3.55);
   --author: calc(var(--body));
   --header: calc(var(--body));
   --excerpt: 14px;
