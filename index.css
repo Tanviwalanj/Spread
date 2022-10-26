@@ -1,31 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
+/* Variables */
+
 :root {
   --body: 16px;
-  --heading1: calc(var(--body)*2);
+  --heading1: calc(var(--body)*2.375);
   --heading2: calc(var(--body)*1.2);
   --heading3: calc(var(--body)*2);
   --title: calc(var(--body)*3);
+  --author: calc(var(--body)*1);
+  --header: calc(var(--body)*1.25);
+  --excerpt: 14px;
+  --smallspacing: 18px;
+  --mediumspacing: 32px;
+  --largespacing: 52px;
+  --xlspacing: 80px;
+  --sectionbreak: 100px;
  
 }
 
 @media (min-width: 768px) {
   :root {
   --body: 20px;
-  --heading1: calc(var(--body)*2.5);
+  --heading1: calc(var(--body)*3);
   --heading2: calc(var(--body)*1.6);
   --heading3: calc(var(--body)*3);
   --title: calc(var(--body)*5);
   --author: calc(var(--body)*1);
+  --header: calc(var(--body)*1.2);
+  --excerpt: 16px;
+  --smallspacing: 32px;
+  --mediumspacing: 52px;
+  --largespacing: 72px;
+  --xlspacing: 100px;
+  --sectionbreak: 120px;
 
-}
-  }
+}}
 
-body{
-  margin: 0;
+html,body{
+  margin:0;
   padding: 0;
   border: 0;
   outline: 0;
+  /*width:100%;
+  overflow-x: hidden;*/
+}
+
+
+.small{
+  margin-bottom: var(--smallspacing);
+}
+.medium{
+  margin-bottom: var(--mediumspacing);
+}
+.large{
+  margin-bottom: var(--largespacing);
+}
+.xl{
+  margin-bottom: var(--xlspacing);
+}
+
+.break{
+  margin-bottom: var(--sectionbreak);
 }
 
 .textscribble{
@@ -66,7 +102,9 @@ body{
   margin-left: 5%;
   margin-bottom: 8%;
   max-width: 1090px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--largespacing);
   width: 88%;
   font-size: var(--title);
   }
@@ -77,7 +115,9 @@ body{
   max-width: 100%;
   height: auto;
   max-width: 1090px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--largespacing);
   width: 88%;
 }
 
@@ -87,7 +127,8 @@ body{
   font-weight: 200;
   line-height: 1.2;
   max-width: 1090px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 88%;
   font-size: var(--heading1);
 }
@@ -118,9 +159,11 @@ font-family: roc-grotesk, sans-serif;
 font-weight: 400;
 font-style: normal;
 text-align: right;
-max-width: 1090px;
-margin: auto;
-width: 88%;
+margin-left: auto;
+margin-right:auto;
+margin-top: var(--smallspacing);
+font-size: var(--header);
+width: 98%;
 }
 
 .heading2{
@@ -131,7 +174,8 @@ width: 88%;
   text-transform: uppercase;
   color:  #FF7870;
   max-width: 768px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 80%;
   font-size: var(--heading2);
 }
@@ -145,35 +189,42 @@ width: 88%;
   margin-right: 5%;
 }
 
-body{
+.body{
   font-family: 'General Sans';
   font-style: normal;
   font-weight: 300;
   font-size: var(--body);
-  line-height: 28px;
+  line-height: auto;
   max-width: 1090px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 88%;
 }
 
-.emphasis{font-family: 'General Sans';
+.emphasis{
+  font-family: 'General Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: calc(var(--body)*2.5);}
+  font-size: calc(var(--body)*2.5);
+}
 
-.italics{font-family: 'General Sans';
+.italics{
+  font-family: 'General Sans';
   font-style: italic;
   font-weight: 400;
-  font-size: calc(var(--body)*2.5);}
+  font-size: calc(var(--body)*2.5);
+}
 
-.italicsorange{font-family: 'General Sans';
+.excerpt{
+  font-family: 'General Sans';
   font-style: italic;
   font-weight: 300;
   color:  #FF7870;
-  font-size: calc(var(--body));
+  font-size: var(--excerpt);
   line-height: 141.8%;
   max-width: 1090px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 88%;
 }
 
@@ -195,21 +246,17 @@ body{
   font-weight: 400;
   font-size: calc(var(--body)*2.5);}
 
-.response{
-  background-color: #FFEDEE; 
-  border-radius: 4px;  
-  padding: 7%; 
-  text-align: justify;
-}
 
 .line{
-  max-width: 1090px;
-  margin: auto;
-  width: 88%;
-  background-color:#C7C7C7; 
+  background-color:#e1e1e1; 
   height: 1px; 
   border: 0 none;
+  max-width: 1090px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 88%;
 }
+
 
 @media (hover:hover) and (pointer: fine) {
   .tooltip {
