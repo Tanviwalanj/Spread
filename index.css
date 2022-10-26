@@ -258,7 +258,7 @@ width: 98%;
 }
 
 
-@media (pointer: fine) {
+@media (hover:hover) {
   .tooltip {
     position: relative;
     display: inline-block;
@@ -322,7 +322,7 @@ width: 98%;
   }
 }
 
-/*@media (pointer: none){
+/*@media (hover:none){
   .tooltip {
     position: relative;
     display: inline-block;
