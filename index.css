@@ -3,7 +3,7 @@
 /* Variables */
 
 :root {
-  --body: 16px;
+  --body: 18px;
   --heading1: calc(var(--body)*2.375);
   --heading2: calc(var(--body)*1.375);
   --title: calc(var(--body)*3);
@@ -84,7 +84,9 @@ html,head{
 html,body{
     width: 100%;
     height: 100%;
-    margin: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     padding: 0px;
 }
 
@@ -291,7 +293,6 @@ width: 98%;
   font-weight: 300;
   color:  #FF7870;
   font-size: var(--excerpt);
-  line-height: 141.8%;
   max-width: 1090px;
   margin-left: auto;
   margin-right: auto;
@@ -326,6 +327,10 @@ width: 98%;
   margin-left: auto;
   margin-right: auto;
   width: 88%
+}
+
+.footer{
+  color: white;
 }
 
 
